@@ -87,6 +87,7 @@ class _ClockWidgetState extends State<ClockWidget> {
                 Text(
                   '${_temperature.temperature}°C',
                   style: TextStyle(
+                    fontFamily: 'Tektur',
                     color: widget.mode == WearMode.active
                         ? const Color.fromARGB(255, 255, 255, 255)
                         : const Color.fromARGB(207, 0, 0, 0),
@@ -106,6 +107,7 @@ class _ClockWidgetState extends State<ClockWidget> {
                       TextSpan(
                         text: _hourString,
                         style: TextStyle(
+                          fontFamily: 'Tektur',
                           color: widget.mode == WearMode.active
                               ? const Color.fromARGB(255, 255, 255, 255)
                               : const Color.fromARGB(207, 0, 0, 0),
@@ -116,6 +118,7 @@ class _ClockWidgetState extends State<ClockWidget> {
                       TextSpan(
                         text: ':',
                         style: TextStyle(
+                          fontFamily: 'Tektur',
                           color: widget.mode == WearMode.active
                               ? const Color.fromARGB(255, 255, 255, 255)
                               : const Color.fromARGB(207, 0, 0, 0),
@@ -126,6 +129,7 @@ class _ClockWidgetState extends State<ClockWidget> {
                       TextSpan(
                         text: _minuteString,
                         style: TextStyle(
+                          fontFamily: 'Tektur',
                           color: widget.mode == WearMode.active
                               ? const Color.fromARGB(255, 255, 255, 255)
                               : const Color.fromARGB(207, 0, 0, 0),
@@ -136,6 +140,7 @@ class _ClockWidgetState extends State<ClockWidget> {
                       TextSpan(
                         text: _secondString,
                         style: TextStyle(
+                          fontFamily: 'Tektur',
                           color: widget.mode == WearMode.active
                               ? const Color.fromARGB(255, 255, 255, 255)
                               : const Color.fromARGB(207, 0, 0, 0),
@@ -154,6 +159,7 @@ class _ClockWidgetState extends State<ClockWidget> {
                 Text(
                   DateFormat('EEEE').format(DateTime.now().toLocal()),
                   style: TextStyle(
+                    fontFamily: 'Tektur',
                     color: widget.mode == WearMode.active
                         ? const Color.fromARGB(255, 255, 255, 255)
                         : const Color.fromARGB(207, 0, 0, 0),
@@ -164,6 +170,7 @@ class _ClockWidgetState extends State<ClockWidget> {
                 Text(
                   DateFormat('d').format(DateTime.now().toLocal()),
                   style: TextStyle(
+                    fontFamily: 'Tektur',
                     color: widget.mode == WearMode.active
                         ? const Color.fromARGB(255, 255, 255, 255)
                         : const Color.fromARGB(207, 0, 0, 0),
